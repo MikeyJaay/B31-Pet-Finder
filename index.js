@@ -7,6 +7,10 @@ const app = express();
 
 const PORT = 8080;
 
+// MJ Added: Serve static files from the public directory
+app.use(express.static('public'));
+
+
 // GET - / - returns homepage
 app.get('/', (req, res) => {
     // serve up the public folder as static index.html file
