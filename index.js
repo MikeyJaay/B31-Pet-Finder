@@ -38,6 +38,9 @@ app.get('/api/v1/pets/owner', (req, res) => {
 
     // send the pet as a response
     res.send(pet);
+
+    // To test localhost url must have: 
+    // http://localhost:8080/api/v1/pets/owner?owner=John
 });
 
 // get pet by name
